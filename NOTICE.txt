@@ -1,0 +1,5 @@
+Rectangle intersection detection
+Copyright 2018 Vincent Le Ligeour
+
+This product also includes the GSON package developed at
+  http://code.google.com/p/google-gson/
