@@ -3,22 +3,27 @@ package vll;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class InputRectangle implements RectangleProvider {
-	@JsonProperty("x")
 	private int x;
-	@JsonProperty("y")
 	private int y;
-	@JsonProperty("w")
 	private int width;
-	@JsonProperty("h")
 	private int height;
 
 	private Integer id;
 
-	public InputRectangle() {
-		// required by jackson because we have a copy constructor.
+	@JsonCreator
+	public InputRectangle(
+		@JsonProperty(value="x", required=true) int x,
+		@JsonProperty(value="y", required=true) int y,
+		@JsonProperty(value="w", required=true) int w,
+		@JsonProperty(value="h", required=true) int h) {
+		this.x = x;
+		this.y = y;
+		this.width = w;
+		this.height = h;
 	}
 	
 	public InputRectangle(InputRectangle ir) {
