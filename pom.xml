@@ -12,7 +12,7 @@
     <mvnCompilerPlugin.version>3.1</mvnCompilerPlugin.version>
     <mvnJarPlugin.version>3.1.0</mvnJarPlugin.version>
     <mvnAssemblyPlugin.version>3.1.0</mvnAssemblyPlugin.version>
-    <jackson.version>2.9.4</jackson.version>
+    <jackson.version>2.9.8</jackson.version>
     <junit.version>4.11</junit.version>
   </properties>
   
